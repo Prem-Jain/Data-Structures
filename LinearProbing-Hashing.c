@@ -3,9 +3,9 @@
 #define size 100
 
 int hashtable[size], n;
-int hash(int x)
+int hash(int key)
 {
-    return x%n;
+    return (key % n);
 }
 
 void insert(int x)
